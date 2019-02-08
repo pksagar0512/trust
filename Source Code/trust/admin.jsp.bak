@@ -129,7 +129,7 @@
 	try{
 		
 		Class.forName("com.mysql.jdbc.Driver");	
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trust","root","admin");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trust","root","root");
 		st=con.createStatement();
 		String sql1="select * from profile ORDER BY report DESC";
 		
